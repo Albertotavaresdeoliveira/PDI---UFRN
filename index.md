@@ -8,7 +8,7 @@ Imagem original:
 
 ![biel](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png)
 
-Código regions.cpp:
+Código [regions.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/gh-pages/regions.cpp):
 
 ```c++
 #include <iostream>
