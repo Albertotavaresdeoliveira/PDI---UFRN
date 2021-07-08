@@ -48,7 +48,7 @@ Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 Código usado para trocar os quadrantes da imagem.
 
-```markdown
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
