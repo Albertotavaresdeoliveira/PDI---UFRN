@@ -1,10 +1,8 @@
-## Welcome to GitHub Pages
+## Alberto Tavares de Oliveira
 
-You can use the [editor on GitHub](https://github.com/Albertotavaresdeoliveira/PDI---UFRN/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Pagina dedicada as respostas dos exercicios de programação da disciplina
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Questão 1
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
