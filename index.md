@@ -10,7 +10,7 @@ Imagem original:
 
 Código regions.cpp:
 
-```markdown
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
