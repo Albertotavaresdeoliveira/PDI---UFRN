@@ -6,4 +6,4 @@ Respostas das tarefas de programação da disciplina de Processamento digital de
 
 ### Questão 1
 
-Resposta
+Resposta da questão 1
