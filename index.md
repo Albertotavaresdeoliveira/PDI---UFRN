@@ -3,25 +3,39 @@
 Pagina dedicada as respostas dos exercicios de programação da disciplina
 
 ### Questão 1
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Abaixo está o código usado para gerar a imagem negativa usando os pontos P1(20, 50) e P2(200, 200).
 
 ```markdown
-Syntax highlighted code block
+#include <iostream>
+#include <opencv2/opencv.hpp>
 
-# Header 1
-## Header 2
-### Header 3
+using namespace cv;
+using namespace std;
 
-- Bulleted
-- List
+int main(int, char**){
+  cv::Mat image;
+  cv::Point p1, p2;
 
-1. Numbered
-2. List
+  image= cv::imread("biel.png",cv::IMREAD_GRAYSCALE);
+  if(!image.data)
+    std::cout << "nao abriu a imagem" << std::endl;
 
-**Bold** and _Italic_ and `Code` text
+    cout<<"Digite P1 e P2 (x1,y1,x2,y2):"<<endl;
+    cin>>p1.x >> p1.y >> p2.x >> p2.y;
 
-[Link](url) and ![Image](src)
+  cv::namedWindow("janela", cv::WINDOW_AUTOSIZE);
+
+  for(int i=p1.x;i<p2.x;i++){
+    for(int j=p1.y;j<p2.y;j++){
+       image.at<uchar>(i,j) = 255 - image.at<uchar>(i,j);
+    }
+  }
+
+  cv::imshow("negativo da imagem", image);
+  cv::imwrite("negativo da imagem.png", image);
+  cv::waitKey();
+  return 0;
+}
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
