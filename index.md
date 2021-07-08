@@ -8,7 +8,7 @@ Imagem original:
 
 ![biel](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png)
 
-Código usado para gerar a imagem negativa usando os pontos P1(20, 50) e P2(200, 200).
+Código regions.cpp:
 
 ```markdown
 #include <iostream>
@@ -42,7 +42,7 @@ int main(int, char**){
   return 0;
 }
 ```
-Imagem obtida:
+Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 ![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
 
