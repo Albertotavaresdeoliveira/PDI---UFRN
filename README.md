@@ -4,6 +4,3 @@
 
 Respostas das tarefas de programação da disciplina de Processamento digital de Imagens
 
-### Questão 1
-
-Resposta da questão 1
