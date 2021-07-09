@@ -56,31 +56,39 @@ using namespace cv;
 using namespace std;
 
 int main(int, char**){
-  cv::Mat image;
-  cv::Point p1, p2;
+  cv::Mat image, quadrantes;
+  int width, height;
 
   image= cv::imread("biel.png",cv::IMREAD_GRAYSCALE);
   if(!image.data)
     std::cout << "nao abriu a imagem" << std::endl;
 
-    cout<<"Digite P1 e P2 (x1,y1,x2,y2):"<<endl;
-    cin>>p1.x >> p1.y >> p2.x >> p2.y;
-
   cv::namedWindow("janela", cv::WINDOW_AUTOSIZE);
 
-  for(int i=p1.x;i<p2.x;i++){
-    for(int j=p1.y;j<p2.y;j++){
-       image.at<uchar>(i,j) = 255 - image.at<uchar>(i,j);
+  quadrantes = image.clone();
+
+  width=image.cols;
+  height=image.rows;
+  std::cout << width << "x" << height << std::endl;
+
+  for(int i=0; i<height/2; i++){
+    for(int j=0; j<width/2; j++){
+      quadrantes.at<uchar>(i,width/2+j) = image.at<uchar>(height/2+i,j); //1° quadrante
+      quadrantes.at<uchar>(i,j) = image.at<uchar>(height/2+i,width/2+j); //2° quadrante
+      quadrantes.at<uchar>(height/2+i,j) = image.at<uchar>(i,width/2+j); //3° quadrante
+      quadrantes.at<uchar>(height/2+i,width/2+j) = image.at<uchar>(i,j); //4° quadrante
     }
   }
 
-  cv::imshow("negativo da imagem", image);
-  cv::imwrite("negativo da imagem.png", image);
+  cv::imshow("imagem original", image);
+  cv::imshow("quadrantes trocados", quadrantes);
+  cv::imwrite("quadrantes trocados.png", quadrantes);
   cv::waitKey();
   return 0;
-}
 ```
 Imagem obtida:
+
+![quadrantes trocados](https://user-images.githubusercontent.com/56025096/125082069-1d3daa80-e09d-11eb-855a-3207b8a69225.png)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
