@@ -85,6 +85,7 @@ int main(int, char**){
   cv::imwrite("quadrantes trocados.png", quadrantes);
   cv::waitKey();
   return 0;
+}
 ```
 Imagem obtida:
 
