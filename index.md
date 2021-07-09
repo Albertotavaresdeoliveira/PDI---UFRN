@@ -46,7 +46,7 @@ Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 ![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
 
-Código [trocaregioes.cpp]()
+Código [trocaregioes.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/654cf64d89688fec9db766f6e2f2105782da475d/trocaregioes.cpp)
 
 ```c++
 #include <iostream>
