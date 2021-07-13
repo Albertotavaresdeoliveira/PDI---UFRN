@@ -1,4 +1,5 @@
 ## Alberto Tavares de Oliveira
+## Francisco Bianor Souza de Medeiros
 
 Página dedicada às respostas dos exercicios de programação da disciplina.
 
