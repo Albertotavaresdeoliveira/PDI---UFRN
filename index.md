@@ -100,6 +100,10 @@ Imagem obtida:
 
 Uma forma de identificar mais de 255 objetos na cena usando a rotulação é rotular os objetos com outras cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo.
 
+Imagem utilizada:
+
+![bolhas](https://user-images.githubusercontent.com/56025096/125695403-8a1ca6de-6ccf-4bbb-b1c0-709586fdadcf.png)   ![labelingRGB](https://user-images.githubusercontent.com/56025096/125695045-529364a3-5ecc-4914-bb7b-396731c7bd7b.png)
+
 ```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -197,7 +201,7 @@ O segundo código foi implementado para a rotulação de regiões e contagem de 
 
 Imagem utilizada:
 
-![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)    ![labelingRGB](https://user-images.githubusercontent.com/56025096/125695045-529364a3-5ecc-4914-bb7b-396731c7bd7b.png)
+![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)  
 
 Abaixo é mostrado a saída no terminal de comando:
 
