@@ -49,7 +49,7 @@ Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 ![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
 
-Código [trocaregioes.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/654cf64d89688fec9db766f6e2f2105782da475d/trocaregioes.cpp)
+Código [trocaregioes.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/654cf64d89688fec9db766f6e2f2105782da475d/trocaregioes.cpp):
 
 ```c++
 #include <iostream>
@@ -191,7 +191,13 @@ int main(int argc, char** argv){
 }
 ```
 
-O segundo código abaixo foi implementado para a rotulação de regiões e contagem de objetos com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
+O segundo código foi implementado para a rotulação de regiões e contagem de objetos com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
+
+Imagem utilizada:
+
+![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)
+
+Código [labelingholes.cpp]():
 
 ```c++
 #include <iostream>
@@ -284,6 +290,12 @@ int main(int argc, char** argv){
   return 0;
 }
 ```
+Abaixo mostra a saída no terminal de comando, seguido das imagens antes e após a rotulação:
+
+![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png)
+
+
+
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
