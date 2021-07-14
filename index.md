@@ -13,7 +13,9 @@ output:
 			collapsed:false
 			smooth_scroll:true
 ---
-
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo=TRUE)
+```
 
 Página dedicada às respostas dos exercicios de programação da disciplina.
 
