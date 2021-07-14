@@ -199,6 +199,10 @@ Imagem utilizada:
 
 ![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)
 
+Abaixo é mostrado a saída no terminal de comando:
+
+![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png)
+
 Código [labelingholes.cpp]():
 
 ```c++
@@ -292,11 +296,6 @@ int main(int argc, char** argv){
   return 0;
 }
 ```
-Abaixo é mostrado a saída no terminal de comando:
-
-![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png)
-
-
 
 
 
