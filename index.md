@@ -196,9 +196,9 @@ int main(int argc, char** argv){
 }
 ```
 
-O segundo código foi implementado para a rotulação de regiões e contagem de objetos com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
+O segundo código foi implementado para a rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
 
-Imagem utilizada:
+Sequência do processamento da imagem:
 
 ![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)   ![semobjnasbordas](https://user-images.githubusercontent.com/56025096/125699222-f8f1c3d2-3be5-470b-9c54-383db962f55c.png)   ![labeling](https://user-images.githubusercontent.com/56025096/125699305-09be40c6-1b2f-4e40-9d9d-ac9e2e5ec992.png)
 
