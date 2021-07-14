@@ -9,7 +9,7 @@ Página dedicada às respostas dos exercicios de programação da disciplina.
 
 Imagem original:
 
-![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png)
+![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png")
 
 Código [regions.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/gh-pages/regions.cpp):
 
@@ -47,7 +47,7 @@ int main(int, char**){
 ```
 Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
-!["negativo da imagem"](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
+![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
 
 O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem **biel.png** como exemplo.
 
