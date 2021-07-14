@@ -1,8 +1,13 @@
 ## Alberto Tavares de Oliveira
 ## Francisco Bianor Souza de Medeiros
 
-### Exercício 1 - Manipulando pixels em uma imagem 1
-### Exercício 2 - Preenchendo regiões 2
+---
+title:"Exercicios de programação de PDI"
+author:"Alberto e Bianor"
+date: "julho de 2021"
+output:
+---
+
 
 Página dedicada às respostas dos exercicios de programação da disciplina.
 
