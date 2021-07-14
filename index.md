@@ -6,6 +6,12 @@ title:"Exercicios de programação de PDI"
 author:"Alberto e Bianor"
 date: "julho de 2021"
 output:
+ 	html_document:
+ 		toc:true
+		toc_depth:5
+		toc_float:
+			collapsed:false
+			smooth_scroll:true
 ---
 
 
