@@ -202,6 +202,9 @@ Imagem utilizada:
 
 ![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)   ![semobjnasbordas](https://user-images.githubusercontent.com/56025096/125699222-f8f1c3d2-3be5-470b-9c54-383db962f55c.png)   ![labeling](https://user-images.githubusercontent.com/56025096/125699305-09be40c6-1b2f-4e40-9d9d-ac9e2e5ec992.png)
 
+![corfundoalterado](https://user-images.githubusercontent.com/56025096/125700096-5b16bcac-c760-4698-931f-5b0c81dc29b3.png)   ![output](https://user-images.githubusercontent.com/56025096/125699930-ed34b79b-2718-4cd2-8641-5b5d8c482f4d.png)
+
+
 Abaixo é mostrado a saída no terminal de comando:
 
 ![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png) 
