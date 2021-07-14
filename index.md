@@ -292,7 +292,7 @@ int main(int argc, char** argv){
   return 0;
 }
 ```
-Abaixo mostra a saída no terminal de comando, seguido das imagens antes e após a rotulação:
+Abaixo é mostrado a saída no terminal de comando:
 
 ![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png)
 
