@@ -1,21 +1,6 @@
 ## Alberto Tavares de Oliveira
 ## Francisco Bianor Souza de Medeiros
 
----
-title:"Exercicios de programação de PDI"
-author:"Alberto e Bianor"
-date: "julho de 2021"
-output:
- 	html_document:
- 		toc:true
-		toc_depth:5
-		toc_float:
-			collapsed:false
-			smooth_scroll:true
----
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo=TRUE)
-```
 
 Página dedicada às respostas dos exercicios de programação da disciplina.
 
