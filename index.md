@@ -10,6 +10,7 @@ Página dedicada às respostas dos exercicios de programação da disciplina.
 Imagem original:
 
 ![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png")
+Figure 1. *biel.png*
 
 Código [regions.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/gh-pages/regions.cpp):
 
