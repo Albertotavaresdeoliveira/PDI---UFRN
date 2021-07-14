@@ -197,7 +197,7 @@ O segundo código foi implementado para a rotulação de regiões e contagem de 
 
 Imagem utilizada:
 
-![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)
+![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)    ![labelingRGB](https://user-images.githubusercontent.com/56025096/125695045-529364a3-5ecc-4914-bb7b-396731c7bd7b.png)
 
 Abaixo é mostrado a saída no terminal de comando:
 
