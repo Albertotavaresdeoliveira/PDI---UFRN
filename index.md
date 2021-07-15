@@ -1,10 +1,30 @@
-## Alberto Tavares de Oliveira
-## Francisco Bianor Souza de Medeiros
+### Alberto Tavares de Oliveira
+### Francisco Bianor Souza de Medeiros
 
+## Sumário
+- [Sumário](#sumário)
+  - [1 - Manipulando pixels em uma imagem](#1---manipulando-pixels-em-uma-imagem)
+    - [Exercício 1.1 - regions.cpp](#exercício-11---regionscpp)
+    - [Exercício 1.2 - trocaregioes.cpp](#exercício-12---trocaregioescpp)
+  - [2 - Preenchendo regiões](#2---preenchendo-regiões)
+    - [Exercício 2.1 - labelingRGB.cpp](#exercício-21---labelingrgbcpp)
+    - [Exercício 2.2 - labelingholes.cpp](#exercício-22---labelingholescpp)
+  - [3 - Manipulação de histogramas](#3---manipulação-de-histogramas)
+    - [Exercício 3.1 - equalize.cpp](#exercício-31---equalizecpp)
+    - [Exercício 3.2 - motiondetector.cpp](#exercício-32---motiondetectorcpp)
+  - [4 - Filtragem no domínio espacial i](#4---filtragem-no-domínio-espacial-i)
+    - [Exercício 4.1 - laplgauss.cpp](#exercício-41---laplgausscpp)
+  - [5 - Filtragem no domínio espacial ii](#5---filtragem-no-domínio-espacial-ii)
+    - [Exercício 5.1 - tiltshift.cpp](#exercício-51---tiltshiftcpp)
+    - [Exercício 5.2 - tiltshiftvideo.cpp](#exercício-52---tiltshiftvideocpp)
+  - [Jekyll Themes](#jekyll-themes)
+  - [Support or Contact](#support-or-contact)
 
 Página dedicada às respostas dos exercicios de programação da disciplina.
 
-### Exercício 1 - Manipulando pixels em uma imagem
+### 1 - Manipulando pixels em uma imagem
+
+#### Exercício 1.1 - regions.cpp
 
 Imagem original:
 
@@ -47,6 +67,9 @@ int main(int, char**){
 Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 ![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
+
+
+#### Exercício 1.2 - trocaregioes.cpp
 
 O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem **biel.png** como exemplo.
 
@@ -95,7 +118,9 @@ Imagem obtida:
 
 ![quadrantes trocados](https://user-images.githubusercontent.com/56025096/125082069-1d3daa80-e09d-11eb-855a-3207b8a69225.png)
 
-### Exercício 2 - Preenchendo regiões
+### 2 - Preenchendo regiões
+
+#### Exercício 2.1 - labelingRGB.cpp
 
 Uma forma de identificar mais de 255 objetos na cena usando a rotulação é rotular os objetos com outras cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo.
 
@@ -195,6 +220,8 @@ int main(int argc, char** argv){
   return 0;
 }
 ```
+
+#### Exercício 2.2 - labelingholes.cpp
 
 O segundo código foi implementado para a rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
 
@@ -303,7 +330,21 @@ int main(int argc, char** argv){
 }
 ```
 
+### 3 - Manipulação de histogramas
 
+#### Exercício 3.1 - equalize.cpp
+
+#### Exercício 3.2 - motiondetector.cpp
+
+### 4 - Filtragem no domínio espacial i
+
+#### Exercício 4.1 - laplgauss.cpp
+
+### 5 - Filtragem no domínio espacial ii
+
+#### Exercício 5.1 - tiltshift.cpp
+
+#### Exercício 5.2 - tiltshiftvideo.cpp
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
