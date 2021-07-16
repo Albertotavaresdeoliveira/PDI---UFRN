@@ -405,7 +405,7 @@ int main(int argc, char** argv){
 
 #### Exercício 3.2 - motiondetector.cpp
 
-Código [motiondetector.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/9d0edc9c838e5b03ae4d19fa42ac7652f8277620/motiondetector.cpp):
+Código [motiondetector.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/motiondetector.cpp):
 
 ```c++
 #include <iostream>
