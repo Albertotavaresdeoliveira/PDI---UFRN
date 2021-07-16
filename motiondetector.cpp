@@ -1,6 +1,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-
+//Alberto
 using namespace cv;
 using namespace std;
 
@@ -60,7 +60,7 @@ int main(int argc, char** argv){
     }
 
     histImgNovo.copyTo(escalacinza(Rect(0, 0, nbins, histh)));
-    
+
     histAnterior = histNovo.clone();
 
     imshow("image", escalacinza);
