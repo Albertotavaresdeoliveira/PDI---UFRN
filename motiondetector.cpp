@@ -1,6 +1,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-//Alberto
+
 using namespace cv;
 using namespace std;
 
