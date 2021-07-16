@@ -9,7 +9,7 @@
   - [2 - Preenchendo regiões](#2---preenchendo-regiões)
     - [Exercício 2.1 - labelingRGB.cpp](#exercício-21---labelingrgbcpp)
     - [Exercício 2.2 - labelingholes.cpp](#exercício-22---labelingholescpp)
-  - [3 - Manipulação de histogramas](#3---manipulação-de-histogramas)
+  - [3 - Manipulação de histogramas teste](#3---manipulação-de-histogramas-teste)
     - [Exercício 3.1 - equalize.cpp](#exercício-31---equalizecpp)
     - [Exercício 3.2 - motiondetector.cpp](#exercício-32---motiondetectorcpp)
   - [4 - Filtragem no domínio espacial i](#4---filtragem-no-domínio-espacial-i)
@@ -330,7 +330,7 @@ int main(int argc, char** argv){
 }
 ```
 
-### 3 - Manipulação de histogramas
+### 3 - Manipulação de histogramas teste
 
 #### Exercício 3.1 - equalize.cpp
 
