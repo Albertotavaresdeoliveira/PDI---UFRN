@@ -30,7 +30,7 @@ Imagem original:
 
 ![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png") 
 
-Código [regions.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/gh-pages/regions.cpp):
+Código [regions.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/regions.cpp):
 
 ```c++
 #include <iostream>
@@ -73,7 +73,7 @@ Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
 O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem **biel.png** como exemplo.
 
-Código [trocaregioes.cpp](https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/654cf64d89688fec9db766f6e2f2105782da475d/trocaregioes.cpp):
+Código [trocaregioes.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/trocaregioes.cpp):
 
 ```c++
 #include <iostream>
@@ -127,6 +127,8 @@ Uma forma de identificar mais de 255 objetos na cena usando a rotulação é rot
 Imagem utilizada:
 
 ![bolhas](https://user-images.githubusercontent.com/56025096/125695403-8a1ca6de-6ccf-4bbb-b1c0-709586fdadcf.png)   ![labelingRGB](https://user-images.githubusercontent.com/56025096/125695045-529364a3-5ecc-4914-bb7b-396731c7bd7b.png)
+
+Código [labelingRGB.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/labelingRGB.cpp):
 
 ```c++
 #include <iostream>
@@ -236,7 +238,7 @@ Abaixo é mostrado a saída no terminal de comando:
 
 ![Captura de tela de 2021-07-14 17-26-01](https://user-images.githubusercontent.com/56025096/125688485-3642f9b5-4e35-41b5-b4d9-7296ad32c969.png) 
 
-Código [labelingholes.cpp]():
+Código [labelingholes.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/labelingholes.cpp):
 
 ```c++
 #include <iostream>
@@ -334,7 +336,7 @@ int main(int argc, char** argv){
 
 #### Exercício 3.1 - equalize.cpp
 
-Código [equalize.cpp]():
+Código [equalize.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/equalize.cpp):
 
 ```c++
 #include <iostream>
