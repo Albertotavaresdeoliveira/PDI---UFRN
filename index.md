@@ -487,7 +487,7 @@ int main(int argc, char** argv){
 
 #### Exercício 4.1 - laplgauss.cpp
 
-Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/motiondetector.cpp):
+Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
 ```c++
 #include <iostream>
