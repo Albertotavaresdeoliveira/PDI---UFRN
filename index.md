@@ -491,6 +491,8 @@ Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtr
 
 ![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
 
+![laplaciano do gaussiano](https://www.youtube.com/watch?v=eB3DGJMF2fg)
+
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
 ```c++
