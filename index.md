@@ -487,6 +487,10 @@ int main(int argc, char** argv){
 
 #### Exercício 4.1 - laplgauss.cpp
 
+Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo:
+
+![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
+
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
 ```c++

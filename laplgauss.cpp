@@ -95,6 +95,7 @@ int main(int, char **) {
         break;
       case 'l':
         mask = Mat(3, 3, CV_32F, laplacian);
+        cout << "laplaciano" << endl;
         printmask(mask);
         break;
       case 'b':
@@ -102,11 +103,13 @@ int main(int, char **) {
         break;
       case 'z'://laplaciano do gaussiano
         mask = Mat(5, 5, CV_32F, log);
+        cout << "laplaciano do gaussiano" << endl;
         printmask(mask);
         break;   
       default:
         break;
     }
   }
+
   return 0;
 }
