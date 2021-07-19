@@ -489,6 +489,8 @@ int main(int argc, char** argv){
 
 Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo. Perceba o aumento do destaque das bordas ao se utilizar o laplaciano do gaussiano.
 
+https://user-images.githubusercontent.com/56025096/126164748-24ef790d-235b-40cb-92de-28e6935e6e4e.mp4
+
 ![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
 
 <img src = "https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif" width = "1800" height = "600" alt = "" >
