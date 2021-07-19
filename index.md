@@ -493,7 +493,7 @@ https://user-images.githubusercontent.com/56025096/126164748-24ef790d-235b-40cb-
 
 ![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
 
-<img src = "https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif" width = "1800" height = "600" alt = "" >
+<img src = "https://github.com/Albertotavaresdeoliveira/PDI-UFRN/blob/gh-pages/lapgauss.mp4" width = "1800" height = "600" alt = "" >
 
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
