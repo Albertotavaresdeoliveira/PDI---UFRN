@@ -491,7 +491,7 @@ Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtr
 
 ![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
 
-<img src = "https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif" width = "1800" height = "700" alt = "" >
+<img src = "https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif" width = "1800" height = "600" alt = "" >
 
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
@@ -614,7 +614,7 @@ int main(int, char **) {
 
 #### Exercício 5.1 - tiltshift.cpp
 
-Código [regions.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/regions.cpp):
+Código [tiltshift.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/tiltshift.cpp):
 
 ```c++
 #include <iostream>
