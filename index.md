@@ -487,11 +487,11 @@ int main(int argc, char** argv){
 
 #### Exercício 4.1 - laplgauss.cpp
 
-Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo:
+Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo. Perceba o aumento do destaque das bordas ao se utilizar o laplaciano do gaussiano.
 
 ![](https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif)
 
-[![laplaciano do gaussiano](https://user-images.githubusercontent.com/56025096/126072383-7f55058f-e786-4328-9125-ea623745c43a.jpg)](https://www.youtube.com/watch?v=eB3DGJMF2fg)
+<img src = "https://media.giphy.com/media/xAOF1p6gl8XpKdqs9C/giphy.gif" width = "1800" height = "700" alt = "" >
 
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
@@ -613,6 +613,99 @@ int main(int, char **) {
 ### 5 - Filtragem no domínio espacial ii
 
 #### Exercício 5.1 - tiltshift.cpp
+
+Código [regions.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/regions.cpp):
+
+```c++
+#include <iostream>
+#include <cstdio>
+#include <opencv2/opencv.hpp>
+
+using namespace cv;
+using namespace std;
+
+double alfa;
+int alfa_slider = 100;
+int alfa_slider_max = 100;
+
+int height_slider = 20;
+int height_slider_max = 100;
+
+int position_slider = 50;
+int position_slider_max = 100;
+
+int height_focus = 50; // altura da regiao central em foco
+int position_focus = 50; // posição do centro da regiao central em foco
+
+Mat image1, image2, blended;
+Mat imageTop; 
+
+char TrackbarName[50];
+
+void on_trackbar_blend(int, void*){
+ alfa = (double) alfa_slider/alfa_slider_max ;
+ addWeighted(image1, 1-alfa, imageTop, alfa, 0.0, blended);
+ imshow("addweighted", blended);
+}
+
+//Altura da região central que entrará em foco
+void on_trackbar_height(int, void*){
+  image2.copyTo(imageTop);
+  int limit = height_slider*255/100;
+  if(limit > 0){
+    Mat tmp = image1(Rect(0, position_focus-(limit/2), 256, limit));//256
+    tmp.copyTo(imageTop(Rect(0, position_focus-(limit/2), 256, limit)));
+  }
+  on_trackbar_blend(height_slider,0);
+}
+
+//Posição vertical do centro da região em foco
+void on_trackbar_position(int, void*){
+  image2.copyTo(imageTop);
+  int limit = height_slider*255/100;
+  position_focus = position_slider*255/100;
+  if(limit > 0){
+    Mat tmp = image1(Rect(0, position_focus-(limit/2), 256, limit));//256
+    tmp.copyTo(imageTop(Rect(0, position_focus-(limit/2), 256, limit)));
+  }
+  on_trackbar_blend(height_slider,0);
+}
+
+int main(int argvc, char** argv){
+  image1 = imread("blend1.jpg");
+  image2 = imread("blend2.jpg");
+  image2.copyTo(imageTop);
+  namedWindow("addweighted", 1);
+
+  std::sprintf( TrackbarName, "Alpha x %d", alfa_slider_max );
+  createTrackbar( TrackbarName, "addweighted",
+                      &alfa_slider,
+                      alfa_slider_max,
+                      on_trackbar_blend );
+  on_trackbar_blend(alfa_slider, 0 );
+
+  std::sprintf( TrackbarName, "Altura x %d", height_slider_max );
+  createTrackbar( TrackbarName, "addweighted",
+                      &height_slider,
+                      height_slider_max,
+                      on_trackbar_height );
+  on_trackbar_height(height_slider, 0 );
+
+  std::sprintf( TrackbarName, "Posicao x %d", position_slider_max );
+  createTrackbar( TrackbarName, "addweighted",
+                      &position_slider,
+                      position_slider_max,
+                      on_trackbar_position );
+  on_trackbar_position(position_slider, 0 );
+
+  waitKey(0);
+
+  imwrite("blended.png", blended);
+  cout << "Imagem blended.png salva" << endl;
+
+  return 0;
+}
+```
 
 #### Exercício 5.2 - tiltshiftvideo.cpp
 
