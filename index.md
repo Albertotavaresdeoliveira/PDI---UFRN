@@ -489,6 +489,8 @@ int main(int argc, char** argv){
 
 Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo. Perceba o aumento do destaque das bordas ao se utilizar o laplaciano do gaussiano.
 
+![](/lapgauss.gif)
+
 Código [laplgauss.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/laplgauss.cpp):
 
 ```c++
