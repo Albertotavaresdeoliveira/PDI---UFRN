@@ -612,6 +612,10 @@ int main(int, char **) {
 
 #### Exercício 5.1 - tiltshift.cpp
 
+Abaixo é mostrado a execução do programa tiltshift.cpp com os 3 ajustes na tela de interface. Com esse programa é possível alterar os sliders de alfa, posição e altura e gerar uma imagem que é a combinação de 2 imagens. Esta funcionalidade será útil no exercício seguinte. Após a finalização da execução do código, uma imagem blended.png é salva.
+
+![](/tiltshift.gif)
+
 Código [tiltshift.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/tiltshift.cpp):
 
 ```c++
