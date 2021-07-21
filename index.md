@@ -24,9 +24,9 @@ Esta página é dedicada às respostas dos exercicios de programação da discip
 
 ### 1 - Manipulando pixels em uma imagem
 
-Este exercício consiste na implementação de um código capaz de substituir uma região retangular predefinida de uma imagem com seu negativo. Neste exemplo em questão, como se trata de uma imagem em escala de cinza, basta subtrair o valor do pixel de 255 e atribuir o resultado ao novo valor do pixel. Caso a imagem fosse colorida, seria necessário alterar o código para manipular cada uma das componentes RGB associados ao pixel. Para o exemplo em questão foram usados os pontos P1(20, 50) e P2(200, 200) para definir a região retangular em que os pixels serão invertidos.
-
 #### Exercício 1.1 - regions.cpp
+
+Este exercício consiste na implementação de um código capaz de substituir uma região retangular predefinida de uma imagem com seu negativo. Neste exemplo em questão, como se trata de uma imagem em escala de cinza, basta subtrair o valor do pixel de 255 e atribuir o resultado ao novo valor do pixel. Caso a imagem fosse colorida, seria necessário alterar o código para manipular cada uma das componentes RGB associados ao pixel. Para o exemplo em questão foram usados os pontos P1(20, 50) e P2(200, 200) para definir a região retangular em que os pixels serão invertidos. Foi usada a imagem **biel.png** como exemplo.
 
 Imagem utilizada e a imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
