@@ -20,15 +20,17 @@
   - [Jekyll Themes](#jekyll-themes)
   - [Support or Contact](#support-or-contact)
 
-Página dedicada às respostas dos exercicios de programação da disciplina.
+Esta página é dedicada às respostas dos exercicios de programação da disciplina de Processamento Digital de Imagens da UFRN da dupla Alberto Tavares de Oliveira e Francisco Bianor Souza de Medeiros. Os exercícios de programação foram resolvidos usando a linguagem *c++* com o auxílio da biblioteca de manipulação de imagens *opencv*. 
 
 ### 1 - Manipulando pixels em uma imagem
 
+Este exercício consiste na implementação de um código capaz de substituir uma região retangular predefinida de uma imagem com seu negativo. Neste exemplo em questão, como se trata de uma imagem em escala de cinza, basta subtrair o valor do pixel de 255 e atribuir o resultado ao novo valor do pixel. Caso a imagem fosse colorida, seria necessário alterar o código para manipular cada uma das componentes RGB associados ao pixel. Para o exemplo em questão foram usados os pontos P1(20, 50) e P2(200, 200) para definir a região retangular em que os pixels serão invertidos.
+
 #### Exercício 1.1 - regions.cpp
 
-Imagem original:
+Imagem utilizada e a imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
-![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png") 
+![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png") ![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
 
 Código [regions.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/regions.cpp):
 
@@ -64,14 +66,14 @@ int main(int, char**){
   return 0;
 }
 ```
-Imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
-
-![negativo da imagem](https://user-images.githubusercontent.com/56025096/124983322-2e8ba600-e00e-11eb-8a58-b124cd974f17.png)
-
 
 #### Exercício 1.2 - trocaregioes.cpp
 
 O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem **biel.png** como exemplo.
+
+Imagem utilizada e imagem obtida:
+
+![biel.png](https://user-images.githubusercontent.com/56025096/124983972-0a7c9480-e00f-11eb-8aae-d0994bdaf1bb.png "biel.png")  ![quadrantes trocados](https://user-images.githubusercontent.com/56025096/125082069-1d3daa80-e09d-11eb-855a-3207b8a69225.png)
 
 Código [trocaregioes.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/trocaregioes.cpp):
 
@@ -114,17 +116,15 @@ int main(int, char**){
   return 0;
 }
 ```
-Imagem obtida:
-
-![quadrantes trocados](https://user-images.githubusercontent.com/56025096/125082069-1d3daa80-e09d-11eb-855a-3207b8a69225.png)
 
 ### 2 - Preenchendo regiões
 
 #### Exercício 2.1 - labelingRGB.cpp
 
-Uma forma de identificar mais de 255 objetos na cena usando a rotulação é rotular os objetos com outras cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo.
+Este exercício consiste de implementar um código capaz de rotular mais de 255 objetos em uma imagem.
+Uma forma de identificar mais de 255 objetos é realizar a rotulaçõa com diversas cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo usando a imagem **bolhas.png**.
 
-Imagem utilizada:
+Imagem utilizada e imagem obtida:
 
 ![bolhas](https://user-images.githubusercontent.com/56025096/125695403-8a1ca6de-6ccf-4bbb-b1c0-709586fdadcf.png)   ![labelingRGB](https://user-images.githubusercontent.com/56025096/125695045-529364a3-5ecc-4914-bb7b-396731c7bd7b.png)
 
@@ -225,14 +225,13 @@ int main(int argc, char** argv){
 
 #### Exercício 2.2 - labelingholes.cpp
 
-O segundo código foi implementado para a rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. 
+Este exercício consiste na rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. Foi usado como exemplo a imagem *bolhas2buracos.png* modificada da imagem original *bolhas.png*. A modificação da imagem consiste numa bolha com mais de um burado para validação do código.
 
 Sequência do processamento da imagem:
 
 ![bolhas2buracos](https://user-images.githubusercontent.com/56025096/125688922-2fa6f0f9-b672-416b-a1c7-cf7fe9c7365a.png)   ![semobjnasbordas](https://user-images.githubusercontent.com/56025096/125699222-f8f1c3d2-3be5-470b-9c54-383db962f55c.png)   ![labeling](https://user-images.githubusercontent.com/56025096/125699305-09be40c6-1b2f-4e40-9d9d-ac9e2e5ec992.png)
 
 ![corfundoalterado](https://user-images.githubusercontent.com/56025096/125700096-5b16bcac-c760-4698-931f-5b0c81dc29b3.png)   ![output](https://user-images.githubusercontent.com/56025096/125699930-ed34b79b-2718-4cd2-8641-5b5d8c482f4d.png)
-
 
 Abaixo é mostrado a saída no terminal de comando:
 
@@ -335,6 +334,10 @@ int main(int argc, char** argv){
 ### 3 - Manipulação de histogramas
 
 #### Exercício 3.1 - equalize.cpp
+
+Este exercício consiste na equalização dos histogramas dos frames capturados por uma câmera de video. A câmera captura os frames e os converte para tons de cinza. Os histogramas de cada frame são calculados pela função *calcHist()* do opencv, e em seguida são equalizados pela função *equalizeHist()*. Os histogramas gerados são exibidos em tempo real no canto superior esquerdo dos frames.
+
+Abaixo é mostrado a comparação entre dois videos e seus histogramas, sendo o segundo video a equalização do primeiro:
 
 ![](/equalize.gif)
 
