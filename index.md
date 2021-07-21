@@ -685,7 +685,7 @@ Mat tiltshift(Mat input, int l1, int l2, int d){
   Mat borrado = borrar(input);
 
   imshow("imagem original", input);
-  imshow("imagem borrada", borrado);
+  //imshow("imagem borrada", borrado);
   
   Mat h1, h2, tsf, y1, y2;
   h1 = gerarponderada(l1, l2, d, input.rows, input.cols);
@@ -698,7 +698,7 @@ Mat tiltshift(Mat input, int l1, int l2, int d){
   addWeighted(y1, 1-a, y2, a, 0.0, tsf);
 
   imshow("imagem ponderada", h1);
-  //imshow("imagem ponderada invertida", h2);
+  imshow("imagem ponderada invertida", h2);
   imshow("multiply 1", y1);
   imshow("multiply 2", y2);
 
