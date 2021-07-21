@@ -336,6 +336,8 @@ int main(int argc, char** argv){
 
 #### Exercício 3.1 - equalize.cpp
 
+![](/equalize.gif)
+
 Código [equalize.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/equalize.cpp):
 
 ```c++
@@ -406,6 +408,10 @@ int main(int argc, char** argv){
 ```
 
 #### Exercício 3.2 - motiondetector.cpp
+
+Este exercício consiste na implementação de um código capaz de detectar movimentos em uma câmera de video usando conceitos de histogramas. A ideia consiste em constantemente se calcular os histogramas dos frames capturados pela câmera. O histograma é comparado com o anterior e caso a diferença entre eles seja maior que um limiar predeterminado ele executa a detecção do movimento. A detecção do movimento neste exemplo é representada pelo desenho de um círculo branco no centro da imagem.
+
+![](/motiondetector.gif)
 
 Código [motiondetector.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/motiondetector.cpp):
 
