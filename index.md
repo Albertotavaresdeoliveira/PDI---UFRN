@@ -26,7 +26,7 @@ Esta página é dedicada às respostas dos exercicios de programação da discip
 
 #### Exercício 1.1 - regions.cpp
 
-Este exercício consiste na implementação de um código capaz de substituir uma região retangular predefinida de uma imagem com seu negativo. Neste exemplo em questão, como se trata de uma imagem em escala de cinza, basta subtrair o valor do pixel de 255 e atribuir o resultado ao novo valor do pixel. Caso a imagem fosse colorida, seria necessário alterar o código para manipular cada uma das componentes RGB associados ao pixel. Para o exemplo em questão foram usados os pontos P1(20, 50) e P2(200, 200) para definir a região retangular em que os pixels serão invertidos. Foi usada a imagem **biel.png** como exemplo.
+Este exercício consiste na implementação de um código capaz de substituir uma região retangular predefinida de uma imagem com seu negativo. Neste exemplo em questão, como se trata de uma imagem em escala de cinza, basta subtrair o valor do pixel de 255 e atribuir o resultado ao novo valor do pixel. Caso a imagem fosse colorida, seria necessário alterar o código para manipular cada uma das componentes RGB associados ao pixel. Para o exemplo em questão foram usados os pontos P1(20, 50) e P2(200, 200) para definir a região retangular em que os pixels serão invertidos. Foi usada a imagem *biel.png* como exemplo.
 
 Imagem utilizada e a imagem obtida usando os pontos P1(20, 50) e P2(200, 200):
 
@@ -69,7 +69,7 @@ int main(int, char**){
 
 #### Exercício 1.2 - trocaregioes.cpp
 
-O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem **biel.png** como exemplo.
+O código a seguir foi implementado de forma a trocar os quadrantes de uma imagem ao longo das diagonais. Foi usada a imagem *biel.png* como exemplo.
 
 Imagem utilizada e imagem obtida:
 
@@ -121,8 +121,8 @@ int main(int, char**){
 
 #### Exercício 2.1 - labelingRGB.cpp
 
-Este exercício consiste de implementar um código capaz de rotular mais de 255 objetos em uma imagem.
-Uma forma de identificar mais de 255 objetos é realizar a rotulaçõa com diversas cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo usando a imagem **bolhas.png**.
+Este exercício consiste de implementar um código capaz de rotular mais de 255 objetos em uma imagem. A rotulação consiste de preencher uma região com uma determinada cor, no opencv pode ser feita usando a função *floodFill()*. À priori, somente é possivel rotular 255 regiões usando a escala de cinza, visto que a região é rotulada com o valor da cor em escala de cinza, podendo assumir 255 tons distintos.
+Uma forma de identificar mais de 255 objetos é realizar a rotulação com diversas cores, ao invés de somente na escala de cinza. Para esse exemplo foi implementado o código abaixo usando a imagem *bolhas.png*.
 
 Imagem utilizada e imagem obtida:
 
@@ -225,7 +225,17 @@ int main(int argc, char** argv){
 
 #### Exercício 2.2 - labelingholes.cpp
 
-Este exercício consiste na rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. Foi usado como exemplo a imagem *bolhas2buracos.png* modificada da imagem original *bolhas.png*. A modificação da imagem consiste numa bolha com mais de um burado para validação do código.
+Este exercício consiste na rotulação de regiões e contagem de objetos, que não tocam na borda da imagem, com e sem buracos internos. Para o algorítimo foi previsto também que objetos com mais de um buraco também podem existir. Foi usado como exemplo a imagem *bolhas2buracos.png* modificada da imagem original *bolhas.png*. A modificação da imagem consiste numa bolha com mais de um buraco para validação do código. Dado uma imagem inicial, a sequência de passos no processamento consiste de: 
+
+1-Carregamento da imagem inicial.
+
+2-Remoção de regiões que tocam as bordas.
+
+3-Rotulação para contagem do número de bolhas.
+
+4-Preencher o fundo de branco usando pixel (0,0).
+
+5-Varrer novamente a imagem buscando regiões pretas (buracos) e preencher estas regiões com preto e depois com branco a fim de contar e eliminar essas regiões.
 
 Sequência do processamento da imagem:
 
@@ -337,7 +347,7 @@ int main(int argc, char** argv){
 
 Este exercício consiste na equalização dos histogramas dos frames capturados por uma câmera de video. A câmera captura os frames e os converte para tons de cinza. Os histogramas de cada frame são calculados pela função *calcHist()* do opencv, e em seguida são equalizados pela função *equalizeHist()*. Os histogramas gerados são exibidos em tempo real no canto superior esquerdo dos frames.
 
-Abaixo é mostrado a comparação entre dois videos e seus histogramas, sendo o segundo video a equalização do primeiro:
+Abaixo é mostrado a comparação entre dois videos e seus histogramas, sendo o segundo video a equalização do primeiro, perceba como os tons são separados podendo assim perceber detalhes que não estavam evidentes no primeiro video:
 
 ![](/equalize.gif)
 
@@ -412,7 +422,7 @@ int main(int argc, char** argv){
 
 #### Exercício 3.2 - motiondetector.cpp
 
-Este exercício consiste na implementação de um código capaz de detectar movimentos em uma câmera de video usando conceitos de histogramas. A ideia consiste em constantemente se calcular os histogramas dos frames capturados pela câmera. O histograma é comparado com o anterior e caso a diferença entre eles seja maior que um limiar predeterminado ele executa a detecção do movimento. A detecção do movimento neste exemplo é representada pelo desenho de um círculo branco no centro da imagem.
+Este exercício consiste na implementação de um código capaz de detectar movimentos em uma câmera de video usando conceitos de histogramas. A ideia consiste em constantemente se calcular os histogramas dos frames capturados pela câmera. O histograma é comparado com o anterior e caso a diferença entre eles seja maior que um limiar predeterminado ele executa a detecção do movimento. A detecção neste exemplo é representada pelo desenho de um círculo branco no centro da imagem.
 
 ![](/motiondetector.gif)
 
@@ -496,7 +506,8 @@ int main(int argc, char** argv){
 
 #### Exercício 4.1 - laplgauss.cpp
 
-Abaixo é mostrado a filtragem de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo. Perceba o aumento do destaque das bordas ao se utilizar o laplaciano do gaussiano.
+Este exercício consiste em filtrar imagens usando o filtro laplaciano do gaussiano e comparar com o filtro laplaciano.
+Abaixo é mostrado a filtragem obtida de imagens capturadas pela câmera usando o filtro laplaciano seguido do laplaciano do gaussiano e as máscaras usadas no processo. A filtragem pode ser obtida usando a função *filter2D()* do opencv, juntamente com o uso da máscara do laplaciano do gaussiano que foi adicionada às já existentes no código original. Perceba o aumento do destaque das bordas ao se utilizar o laplaciano do gaussiano.
 
 ![](/lapgauss.gif)
 
@@ -621,7 +632,7 @@ int main(int, char **) {
 
 #### Exercício 5.1 - tiltshift.cpp
 
-Abaixo é mostrado o resultado da execução do programa tiltshift.cpp com os 3 ajustes na tela de interface. Foi usado como exemplo a imagem blend2.jpg, mas qualquer imagem pode ser usada. Com esse programa é possível alterar os sliders de decaimento, altura e posição e com isso gerar uma imagem que é o resultado do tiltshift. Após a finalização da execução do código, uma imagem tiltshift.png é salva.
+Abaixo é mostrado o resultado da execução do programa tiltshift.cpp com os 3 ajustes na tela de interface. Foi usado como exemplo a imagem *blend2.jpg*, mas qualquer imagem pode ser usada. Com esse programa é possível alterar os sliders de decaimento, altura e posição e com isso gerar uma imagem que é o resultado do tiltshift. Após a finalização da execução do código, uma imagem *tiltshift.png* é salva.
 
 Resultado do tiltshift aplicado à imagem blend2.jpg:
 
