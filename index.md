@@ -1196,7 +1196,7 @@ Este exercício foi feito usando os programas *canny.cpp* e *pontilhismo.cpp*. C
 
 A efeito obtido na imagem *lena.jpg* pode ser visto abaixo.
 
-![lena.jpg](lena.jpg) ![cannypoints.jpg](cannypoints.jpg) 
+![lena.jpg](lenagray.jpg) ![cannypoints.jpg](cannypoints.jpg) 
 
 Código [cannypoints.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/cannypoints.cpp):
 
