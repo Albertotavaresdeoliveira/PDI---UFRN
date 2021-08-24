@@ -1192,9 +1192,9 @@ int main(int, char**) {
 
 #### Exercício 7.1 - cannypoints.cpp
 
-Este exercício foi feito usando os programas *canny.cpp* e *pontilhismo.cpp*. Consiste em usar as bordas geradas pelo algoritmo de Canny para melhorar a imagem gerada pelo código pontilhista. Para isso foi usada a imagem pontilhista como base e em seguida, para cada coordenada correspondente à uma borda de Canny foi desenhado um círculo de raio menor para dar mais detalhe sem perder o efeito de pontilhismo. O resultado foi uma imagem com pontos grandes (raio 6) e pontos pequenos (raio 2), sendo os pontos pequenos correspondentes aos locais das bordas de Canny e com valor do pixel central da imagem original.
+Este exercício foi feito usando os programas *canny.cpp* e *pontilhismo.cpp*. Consiste em usar as bordas geradas pelo algoritmo de Canny para melhorar a imagem gerada pelo código pontilhista. Para isso foi usada a imagem pontilhista como base e em seguida, para cada coordenada correspondente à uma borda de Canny (pixel com valor 255) foi desenhado um círculo de raio menor para dar mais detalhe sem perder o efeito de pontilhismo. O resultado foi uma imagem com pontos grandes (raio 6) e pontos pequenos (raio 2), sendo os pontos pequenos correspondentes aos locais das bordas de Canny e com valor do pixel central da imagem original.
 
-A efeito obtido na imagem *lena.jpg* pode ser visto abaixo.
+A efeito obtido na imagem *lenagray.jpg* pode ser visto abaixo usando um threshold de 60.
 
 ![lena.jpg](lenagray.jpg) ![cannypoints.jpg](cannypoints.jpg) 
 
