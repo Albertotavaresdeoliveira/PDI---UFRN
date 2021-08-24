@@ -101,7 +101,8 @@ int main(int argc, char** argv){
   imshow("Image.jpg", image);
   imshow("Pontos.jpg", points);
   waitKey();
-  
+
+  imwrite("lenagray.jpg", image);
   imwrite("pontos.jpg", points);
   imwrite("cannypoints.jpg", cannypoints);
 
