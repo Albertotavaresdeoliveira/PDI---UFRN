@@ -803,6 +803,8 @@ int main(int argvc, char** argv){
 Este exercício consiste em usar o filtro homomorfico para corrigir uma cena mal iluminada. O filtro age no domínio da frequência, atuando nas componentes de baixa frequência que são as regiões em que o defeito da iluminação mal distribuída é mais intenso. Ao aplicar o filtro é esperado uma grande redução no defeito de iluminação, mas será perdido uma parte da qualidade da imagem.
 Abaixo é mostrado o código implementado usando o filtro homomorfico.
 
+![](/FiltroHomamarfico.gif)
+
 Código [filtrohomomorfico.cpp](https://raw.githubusercontent.com/Albertotavaresdeoliveira/PDI-UFRN/gh-pages/filtrohomomorfico.cpp):
 
 ```c++
